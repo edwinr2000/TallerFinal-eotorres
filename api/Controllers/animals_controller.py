@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from Models.animal import Gato, Perro, Huron, BoaConstrictor
+from api.Models.animal import Gato, Perro, Huron, BoaConstrictor
 
 # Crear el Blueprint para las rutas relacionadas con animales
 animals_bp = Blueprint('animals', __name__)

@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from Controllers.animals_controller import animals_bp
+from api.Controllers.animals_controller import animals_bp
 
 app = Flask(__name__)
 
@@ -10,4 +10,4 @@ app.register_blueprint(animals_bp)
 def index():
     return render_template('index.html')
 
-# No se incluye app.run() porque Vercel maneja automáticamente el servidor
+
